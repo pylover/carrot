@@ -16,7 +16,8 @@
  *
  *  Author: Vahid Mardani <vahid.mardani@gmail.com>
  */
-/* standard */
+
+
 /* thirdparty */
 #include <cutest.h>
 

@@ -16,6 +16,8 @@
  *
  *  Author: Vahid Mardani <vahid.mardani@gmail.com>
  */
+
+
 /* standard */
 #include <stddef.h>
 #include <stdio.h>
@@ -85,7 +87,6 @@ main() {
 
     /* create a task for the clinet */
     client = pcaio_task_new(_clientA, NULL, 2, &c, "google.com:80");
-    // client = pcaio_task_new(_clientA, NULL, 2, &c, "localhost:8080");
     ASSRT(client);
 
     /* execute and wait for pcaio event loop */

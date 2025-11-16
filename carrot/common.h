@@ -19,6 +19,7 @@
 #ifndef CARROT_COMMON_H_
 #define CARROT_COMMON_H_
 
+
 /* local private */
 #include "config.h"
 
