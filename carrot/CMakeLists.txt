@@ -2,7 +2,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 
 # client
-add_library(client OBJECT client.c client.h)
+add_library(client OBJECT client.c)
 
 
 # server

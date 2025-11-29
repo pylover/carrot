@@ -36,7 +36,6 @@
 
 /* local private */
 #include "common.h"
-#include "client.h"
 
 
 const struct carrot_client_config carrot_client_defaultconfig = {
