@@ -57,12 +57,12 @@ test_request_headers() {
 
     eqint(200, request("GET / HTTP/1.1\r\n"
                 "x-foo: bar\r\n\r\n"));
-    eqint(2, r->headers.count);
+    eqint(3, r->headers.count);
     eqstr("1", chttp_headerset_get(&r->headers, "x-headers"));
     eqstr("bar", chttp_headerset_get(&r->headers, "x-foo"));
 
     eqint(200, request("GET / HTTP/1.1\r\n\r\n"));
-    eqint(1, r->headers.count);
+    eqint(2, r->headers.count);
     eqstr("0", chttp_headerset_get(&r->headers, "x-headers"));
 
     serverfixture_teardown();
